@@ -8,6 +8,7 @@ pytube = "*"
 pydub = "*"
 tqdm = "*"
 pandas = "*"
+yt-dlp = "*"
 
 [dev-packages]
 
