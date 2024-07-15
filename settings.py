@@ -5,7 +5,7 @@ now = datetime.now()
 OUTPUT_FORMAT = 'mp3'
 
 # 入力リンクデータ
-INPUT_LINK_DATA = 'data/video_info_list.csv'
+INPUT_LINK_DATA = 'data/music_list.csv'
 
 # 出力先ディレクトリ
-OUTPUT_DIRECTORY = f'/Users/chiroru/Downloads/EDM/{now.strftime("%Y%m%d%H%M")}_変換音声'
+OUTPUT_DIRECTORY = f'/Users/kawasakitakuma/Downloads/musics/{now.strftime("%Y%m%d%H%M")}_変換音声'
