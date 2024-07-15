@@ -6,14 +6,18 @@ YouTubeの動画を音声ファイルに変換するプログラム
 ## 事前準備
 
 ### csvファイルの用意
-csvファイルのフォーマット
-```
-YouTubeリンク, 出力ファイル名
-https://example.com, サンプルファイル
-```
 
 csvファイルの配置場所<br>
 `data`フォルダ配下
+
+data
+├── (例)music_list.csv
+
+csvファイルのフォーマット※カンマ(,)と出力ファイル名の間に空白は不必要
+```
+YouTubeリンク,出力ファイル名
+https://example.com,サンプルファイル
+```
 
 ## 拡張子設定
 `settings.py`の`OUTPUT_FORMAT`を変換したい音声の拡張子にする<br>
@@ -26,7 +30,7 @@ OUTPUT_FORMAT = 'mp3'
 `settings.py`の`INPUT_LINK_DATA`を読み込ませたいファイルパスにする<br>
 例
 ```
-INPUT_LINK_DATA = 'data/video_info_list.csv'
+INPUT_LINK_DATA = 'music_list.csv'
 ```
 
 ## アウトプット設定
