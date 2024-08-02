@@ -5,11 +5,36 @@ YouTubeの動画を音声ファイルに変換するプログラム
 
 ## 事前準備
 
+### ローカル環境にクローン
+```
+git clone git@github.com:taichihub/voice_conversion.git
+```
+(※) クローン後、voice_conversionディレクトリに移動する
+
+### pipenvをインストール
+```
+pip install pipenv
+```
+
+### 環境構築
+pipfile, pipfile.lockの情報をもとに環境構築される
+```
+pipenv install
+```
+
+### 仮想環境に入る
+```
+pipenv shell
+```
+
 ### csvファイルの用意
 csvファイルのフォーマット
 ```
-YouTubeリンク, 出力ファイル名
-https://example.com, サンプルファイル
+YouTubeリンク,出力ファイル名
+https://example1.com,サンプルファイル1
+https://example2.com,サンプルファイル2
+https://example3.com,サンプルファイル3
+.....
 ```
 
 csvファイルの配置場所<br>
